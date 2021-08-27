@@ -114,13 +114,3 @@ If you work on Windows but use a Linux VM to run your development server, you ma
 	"force-unix-separator": true
 }
 ```
-
-## Modifying the src directory of the mu plugins
-
-You may wish to change the src directory you want the mu plugins to be loaded from. For example, on WordPress VIP projects 
-you may wish to load mu plugins from client-mu-plugins using this loader. To do this you can set a constant to tell the 
-mu plugin loader where your mu plugins are kept:
-
-```php
-define('MU_PLUGIN_LOADER_SRC_DIR', WPCOM_VIP_CLIENT_MU_PLUGIN_DIR . '/');
-```

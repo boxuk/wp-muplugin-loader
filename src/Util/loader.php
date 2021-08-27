@@ -24,7 +24,7 @@ namespace LkWdwrd\MuPluginLoader\Util;
 function mu_loader($plugins = false, $ps = DIRECTORY_SEPARATOR, $mudir = WPMU_PLUGIN_DIR): void
 {
     if (! $plugins) {
-        $plugins = get_muplugins(ABSPATH, WP_PLUGIN_DIR, $mudir);
+        $plugins = get_muplugins();
     }
     foreach ($plugins as $plugin) {
         // Conditionally register the MU plugin in WordPress 3.9 or newer.

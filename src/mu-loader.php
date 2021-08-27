@@ -34,7 +34,7 @@ require_once __DIR__ . '/Util/assets.php';
  */
 if (! defined('WP_INSTALLING') || ! WP_INSTALLING) {
     // Run the loader unless installing
-    mu_loader(false, DIRECTORY_SEPARATOR, defined('MU_PLUGIN_LOADER_SRC_DIR') ? MU_PLUGIN_LOADER_SRC_DIR : WPMU_PLUGIN_DIR);
+    mu_loader();
 }
 
 /**
